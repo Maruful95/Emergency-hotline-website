@@ -4,9 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emergency hotline</title>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <!-- daisyui and tailwind cdn -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- font awesome cdn -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- css file for font -->
+     <link rel="stylesheet" href="tailwind.css">
+
 </head>
 <body>
     <!-- nav bar -->
-    
+    <div class="flex justify-between items-center px-[60px] py-6">
+        <div class="flex items-center gap-2.5">
+            <img class="w-[50px]" src="assets/logo.png" alt="logo">
+            <h1 class="font-inter text-xl font-extrabold text-[#006747]">Emergency<br>Service</h1>
+        </div>
+        <div class="flex items-center gap-5">
+            <h1 class="font-inter flex items-center gap-1.5 px-5 py-3 rounded-full bg-[#41ff6b1a]"><span class="text-xl font-black">0</span><i class="text-[30px] text-[#ED1C24] fa-solid fa-heart"></i></h1>
+            <h1 class="font-inter flex items-center gap-1.5 px-5 py-3 rounded-full bg-[#41ff6b1a]"><span class="text-xl font-black">100</span><i class="text-[25px] text-[#FFB703] fa-brands fa-bitcoin"></i></h1>
+            <h1 class="font-inter flex items-center gap-1.5 px-9 py-3 rounded-full bg-[#00A63E] text-xl font-bold text-white"><span >0</span> Copy</h1>
+        </div>
+    </div>
 </body>
 </html>

@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+.font-hind {
+  font-family: "Hind Madurai", sans-serif;
+}
+.font-inter {
+  font-family: 'Inter', sans-serif;
+}

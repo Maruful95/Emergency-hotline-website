@@ -71,10 +71,33 @@ document.querySelectorAll(".call-button").forEach(function(btn) {
         // send data to history
         const name = btn.parentElement.parentElement.querySelector(".name").innerText.trim()
         const data = {
-            name:name,
+            name: name,
+            number: hotlineNumber,
             date:new Date().toLocaleTimeString()
         }
         callData.push(data)
     })
 })
 
+// call history 
+document.querySelectorAll(".call-button").forEach(function (btn) {
+    btn.addEventListener("click", function (e) {
+        const callHistory = document.getElementById("history")
+        callHistory.innerHTML = ""
+
+        for (const data of callData) {
+            const div = document.createElement("div")
+            div.innerHTML = `
+            <div class="mb-2 p-3 flex justify-between items-center bg-[#f5f5f5cf] rounded-[12px]">
+                <div>
+                <h1 class="font-inter font-semibold text-[15px] ">${data.name}</h1>
+                <p class="font-hind font-normal text-[17px] text-[#5C5C5C]">${data.number}</p>
+                </div>
+                <p class="whitespace-nowrap font-hind font-normal text-[14px]">${data.date}</p>
+            </div> 
+            `
+
+            callHistory.appendChild(div)
+        }
+    })
+})

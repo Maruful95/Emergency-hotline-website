@@ -10,8 +10,8 @@ function setValue(value) {
 }
 
 
-
-document.querySelectorAll(".heart-icon").forEach(icon => {
+// heart icon functionality
+document.querySelectorAll(".heart-icon").forEach(function(icon) {
     icon.addEventListener("click", function (e) {
         
         const heartCount = getNumber("heart-count")
@@ -20,3 +20,6 @@ document.querySelectorAll(".heart-icon").forEach(icon => {
         setValue(newHeartCount)
     });
 });
+
+
+// hotline number functionality

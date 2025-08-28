@@ -101,3 +101,10 @@ document.querySelectorAll(".call-button").forEach(function (btn) {
         }
     })
 })
+
+// clear button functionality
+document.getElementById("clear-button").addEventListener("click", function () {
+    callData.length = 0
+    const callHistory = document.getElementById("history")
+    callHistory.innerHTML = ""
+})
